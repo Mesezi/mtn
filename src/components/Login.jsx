@@ -2,6 +2,7 @@
 import bg from '../assets/Sign.png'
 import mtnYellow from '../assets/MTN-yellow.png'
 import avatar from '../assets/avatar.avif'
+import { Link } from 'react-router-dom'
 
 function Login() {
   
@@ -30,9 +31,10 @@ function Login() {
 <i className="fa-solid fa-mobile-screen rounded-l"></i>
     <input type="text" name="" className='rounded-r' placeholder='Enter MTN Number' id="" /></div>
 
-<p>Don't have an account? <span className='text-color'>Sign Up</span></p>
+<p>Don't have an account? <Link to="/register" className='text-color'>Sign Up</Link></p>
 
-<button className='bg-color text-black px-12 py-3 text-xl mtn-bold rounded-xl'>Proceed</button>
+
+<Link to="/home"><button className='bg-color text-black px-12 py-3 text-xl mtn-bold rounded-xl'>Proceed</button></Link>
 </form>
 </div>
 

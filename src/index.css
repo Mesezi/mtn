@@ -120,3 +120,34 @@ form{
         pointer-events: none;
   }
 
+  .home.page{
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+  }
+
+
+  .home section:nth-of-type(2){
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 25% 1fr;
+  }
+
+
+.overflow-x-hidden::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .overflow-x-hidden::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .overflow-x-hidden::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  /* Handle on hover */
+  .overflow-x-hidden::-webkit-scrollbar-thumb:hover {
+    background: #ffcc03;
+  }

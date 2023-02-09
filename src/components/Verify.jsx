@@ -3,6 +3,7 @@ import bg from '../assets/Sign.png'
 import mtnYellow from '../assets/MTN-yellow.png'
 import avatar from '../assets/avatar.avif'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function Verify() {
   
@@ -28,13 +29,6 @@ el.addEventListener('keyup',()=>{
 })
 
 }, [])
-
-function otpClick(current,nextInput){
-
-    if(current.value.length === 1){
-      document.getElementById(nextInput).focus();
-    }
-  }
 
 
 
@@ -70,8 +64,7 @@ function otpClick(current,nextInput){
     <input className='otp-code disable' maxLength="1" type="text" name="" id="" />
 </div>
 
-
-<button className='bg-color text-black px-12 py-3 text-xl mtn-bold rounded-xl'>Verify-OTP</button>
+<Link to="/home"><button className='bg-color text-black px-12 py-3 text-xl mtn-bold rounded-xl'>Verify-OTP</button></Link>
 
 <p>Didn't receive code? <span className='text-color'>Resend Code</span></p>
 </form>
