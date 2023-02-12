@@ -7,95 +7,46 @@ function Manage() {
   
   return (
 
-   <div className="home page">
-
-<img src={bg} alt="" />
-
-<article>
-
-<section className='flex justify-between container mx-auto py-3'>
-    <div>
-        <Link to='/home'>
-        <button className='text-color bg-gray-700/50 text-3xl px-3 py-1 rounded-lg'><i className="fa-solid fa-arrow-left-long"></i>
-        </button></Link>
-        
-    </div>
-
-   <div>
-    <p id='log-out' className='py-2 px-4 rounded-xl text-color border-2 border-gray-500'>Log out</p>
-   </div>
-
-   </section>
-
-   <section className='container mx-auto overflow-hidden mt-5'>
-    <div className='flex flex-col gap-5 overflow-scroll overflow-x-hidden pr-4 h-100'>
-        <h3 className='text-xl'>Connect with your Apps</h3>
-
-        <article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
-
-        <img src={bg} className='h-36 rounded-xl' alt="" />
-
-        <div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-color'>myMTN App</h4>
-        <p>Personal your experience with your avatar</p>
-
-        <div><button className='py-3 px-4 text-sm text-black rounded-xl bg-color inline'>Connect +</button></div>
-
-        </div>
-       
-        </article>
-
-
-        <article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
-
-        <img src={bg} className='h-36 rounded-xl' alt="" />
-
-        <div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-color'>myMTN App</h4>
-        <p>Personal your experience with your avatar</p>
-
-        <div><button className='py-3 px-4 text-sm text-black rounded-xl bg-color inline'>Connect +</button></div>
-
-        </div>
-       
-        </article>
-
-        <article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
-
-        <img src={bg} className='h-36 rounded-xl' alt="" />
-
-        <div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-color'>myMTN App</h4>
-        <p>Personal your experience with your avatar</p>
-
-        <div><button className='py-3 px-4 text-sm text-black rounded-xl bg-color inline'>Connect +</button></div>
-
-        </div>
-       
-        </article>
-    </div>
-
-    <div className='pb-12'>
+    <div className='pb-20 manage'>
 <h2 className='text-4xl mtn-bold'>Manage your avatars</h2>
 
-<article className='bg-black/75 rounded-2xl px-16 p-8 my-8 flex gap-20'>
+<section className='bg-black/75 rounded-2xl px-16 p-8 my-8 h-[30rem] overflow-scroll overflow-x-hidden'>
 
-<div className='flex flex-wrap w-1/2'>
-    <div className='flex justify-between p-8 w-full border-2 border-gray-500 rounded-xl '>
-    <img src={avatar} className='h-52' alt="" />
-    <div className='flex items-end'><button className='py-2 px-4 border-2 border-gray-500 text-sm text-color rounded-xl inline'>Share +</button></div>
+<article className=''>
+  <div className='flex flex-col p-8 w-full  border-2 border-gray-500 rounded-xl '>
+
+    <div className='flex justify-end'>
+      <button className='relative tooltip'><i className="fa-solid text-4xl text-mtn-yellow fa-ellipsis"></i>
+      <span className='absolute top-10 left-0 px-4 py-3 bg-red-100 text-red-800 w-max rounded-xl flex items-center gap-3'>
+        <i className="fa-regular text-xl fa-trash-can"></i> Delete Avatar </span></button>
     </div>
 
-    <button className='py-3 px-4 border-2 text-black mtn-bold border-gray-500 bg-color rounded-xl my-8 inline-block'>Create New Avatar +</button>
-
-
+    <div className='flex md:justify-between gap-5 flex-wrap justify-center '>
+    <img src={avatar} className='h-48' alt="" />
+    <div className='flex items-end'><button className='py-3 px-4 border-2 text-mtn-yellow mtn-bold border-gray-500 rounded-xl w-full
+         hover:border-mtn-yellow hover:text-white ease-in-out duration-300 inline'>Edit
+      <i className="pl-3 fa-solid fa-pencil"></i>
+     </button>
+     </div>
+    </div>
 </div>
+
+
+
 </article>
 
+<div>
+<Link to='/new-avatar' className='py-3 px-4 border-2 text-black mtn-bold border-gray-500 bg-mtn-yellow rounded-xl my-8 inline-block
+        hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70'>Create New Avatar +</Link>
+</div>
+
+</section>
+
+
+
 
     </div>
 
-   </section>
-
-    </article>
-    </div>
 
   )
 }

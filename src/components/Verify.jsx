@@ -36,41 +36,40 @@ el.addEventListener('keyup',()=>{
   return (
     <div className="login page">
 
-<img src={bg} alt="" />
-
 <article>
 
-<section className='heading px-5 pt-8 gap-10 items-center'>
-<img src={mtnYellow} className='h-16 px-6' alt="" />
-<h1 className='text-4xl mtn-bold text-center'>Yello, Welcome to MTN Metaverse Portal</h1>
+<section className='heading px-5 pt-8 gap-3 md:gap-10 items-center'>
+<img src={mtnYellow} className='h-16 px-6 mx-auto' alt="" />
+<h1 className='md:text-3xl text-2xl mtn-bold text-center text-white'>Yello, Welcome to MTN Metaverse Portal</h1>
 </section>
 
 <section className='verify-account'>
 
 <div className='flex justify-center items-center'>
-<form className='p-10 flex flex-col gap-7 items-center text-lg'>
+<form className='p-5 md:p-10 flex flex-col gap-5 md:gap-7 items-center text-lg'>
 
-<h2 className='text-4xl mtn-bold text-center text-color'>Create an Account</h2>
+<h2 className='text-4xl mtn-bold text-center text-mtn-yellow'>Create an Account</h2>
 
-<p className='mtn-bold text-2xl'>Enter your Verification Code</p>
+<p className='mtn-bold text-2xl text-center'>Enter your Verification Code</p>
 
 <p className='text-center'>We sent a verification code to <br /> 
 09020****05</p>
 
 <div className='flex justify-evenly w-full px-4'>
     <input className='otp-code' maxLength="1" type="text" name="" id="" />
-    <input className='otp-code disbale' maxLength="1" type="text" name="" id="" />
-    <input className='otp-code disable' maxLength="1" type="text" name="" id="" />
-    <input className='otp-code disable' maxLength="1" type="text" name="" id="" />
+    <input className='otp-code' maxLength="1" type="text" name="" id="" />
+    <input className='otp-code' maxLength="1" type="text" name="" id="" />
+    <input className='otp-code' maxLength="1" type="text" name="" id="" />
 </div>
 
-<Link to="/home"><button className='bg-color text-black px-12 py-3 text-xl mtn-bold rounded-xl'>Verify-OTP</button></Link>
+<Link to="/home"><button className='bg-mtn-yellow/70 text-black px-12 py-3 text-xl mtn-bold rounded-xl hover:bg-mtn-yellow'>Verify-OTP</button></Link>
 
-<p>Didn't receive code? <span className='text-color'>Resend Code</span></p>
+
+<p>Didn't receive code? <button className='text-mtn-yellow hover:text-white'>Resend Code</button></p>
 </form>
 </div>
 
-<div className="avatar flex items-center">
+<div className="hidden avatar md:flex items-center">
 <img src={avatar} alt="" />
 </div>
 

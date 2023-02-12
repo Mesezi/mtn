@@ -11,34 +11,33 @@ function Login() {
   return (
     <div className="login page">
 
-<img src={bg} alt="" />
-
 <article>
 
 <section className='heading px-5 pt-8 gap-10 items-center'>
-<img src={mtnYellow} className='h-16 px-6' alt="" />
-<h1 className='text-4xl mtn-bold text-center'>Yello, Welcome to MTN Metaverse Portal</h1>
+<img src={mtnYellow} className='h-16 px-6 mx-auto' alt="" />
+<h1 className='md:text-3xl text-2xl mtn-bold text-center text-white'>Yello, Welcome to MTN Metaverse Portal</h1>
 </section>
 
 <section className='create-account'>
 
 <div className='flex justify-center items-center'>
-<form className='p-10 flex flex-col gap-7 items-center text-xl'>
+<form className='p-7 md:p-10 flex flex-col gap-7 items-center text-xl'>
 
-<h2 className='text-4xl mtn-bold text-center text-color'>Log In to Portal</h2>
+<h2 className='md:text-4xl text-3xl mtn-bold text-center text-mtn-yellow'>Log In to Portal</h2>
 
 <div className='w-full flex'>
 <i className="fa-solid fa-mobile-screen rounded-l"></i>
     <input type="text" name="" className='rounded-r' placeholder='Enter MTN Number' id="" /></div>
 
-<p>Don't have an account? <Link to="/register" className='text-color'>Sign Up</Link></p>
+<p className='text-center'>Don't have an account? <Link to="/register" className='text-mtn-yellow hover:text-white'>Sign Up</Link></p>
 
 
-<Link to="/home"><button className='bg-color text-black px-12 py-3 text-xl mtn-bold rounded-xl'>Proceed</button></Link>
+<Link to="/home"><button className='bg-mtn-yellow/70 text-black px-12 py-3 text-xl mtn-bold rounded-xl
+hover:bg-mtn-yellow'>Proceed</button></Link>
 </form>
 </div>
 
-<div className="avatar flex items-center">
+<div className="hidden avatar md:flex items-center">
 <img src={avatar} alt="" />
 </div>
 

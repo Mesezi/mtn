@@ -14,10 +14,17 @@
   }
 
 
+  html{
+    font-size: 13px;
+  }
 
 
 body{
     font-family: "MTN";
+    background-image: url(./assets/Sign.png);
+    background-size: cover;
+    color: white;
+    background-repeat: no-repeat;
 }
 
 .mtn-bold{
@@ -27,7 +34,7 @@ body{
 
 .heading{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
 }
 *{
     margin: 0;
@@ -35,43 +42,21 @@ body{
     box-sizing: border-box;
 }
 
-.page{
-    height: 100vh;
-    position: relative;
-    width: 100%;
-    color: white;
-}
-
-.page > img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
 
 .page > article{
-    position: absolute;
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-rows: auto 1fr;
+    min-height: 100vh;
 }
 
 
 .create-account, .verify-account{
     display: grid;
-    grid-template-columns: 1fr 40%;
+    grid-template-columns: 1fr;
 }
 
 .avatar img{
     height: 70vh;
-}
-
-.text-color{
-    color: #ffcc03;
-}
-
-.bg-color{
-    background-color: #ffcc03;
 }
 
 form{
@@ -92,6 +77,7 @@ form{
     width: 100%;
     border: none;
     outline: none;
+    color: black;
 }
 
 .create-account i, .verify-account i{
@@ -129,7 +115,7 @@ form{
   .home section:nth-of-type(2){
     display: grid;
     gap: 4rem;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 1fr;
   }
 
 
@@ -151,3 +137,45 @@ form{
   .overflow-x-hidden::-webkit-scrollbar-thumb:hover {
     background: #ffcc03;
   }
+
+  .manage article{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+  }
+
+.tooltip span{
+visibility: hidden;
+}
+
+.tooltip:hover > span{
+  visibility: visible;
+}
+  
+@media(min-width: 767px){
+  html{
+    font-size: 16px;
+  }
+
+  .create-account, .verify-account{
+    grid-template-columns: 1fr 40%;
+}
+
+.heading{
+  grid-template-columns: auto 1fr;
+}
+
+.page > article{
+  height: 100vh;
+}
+
+.home section:nth-of-type(2){
+  grid-template-columns: 18rem 1fr;
+}
+
+
+.manage article{
+  grid-template-columns: 1fr 1fr;
+}
+
+}
