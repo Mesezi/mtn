@@ -2,27 +2,32 @@
 import bg from '../assets/Sign.png'
 import mtnYellow from '../assets/MTN-yellow.png'
 import avatar from '../assets/avatar.avif'
-import { Link, Routes, Route, Outlet } from 'react-router-dom'
+import { Link, Routes, Route, Outlet, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 function Home() {
+  const location = useLocation();
 
   return (
 
-   <div className="home page">
+   <div className="home page container mx-auto">
 <article>
 
-<section className='flex justify-between container mx-auto py-5'>
-    <img src={mtnYellow} className='h-12' alt="" />
+<section className='flex justify-between py-5'>
+  {location.pathname === '/home' ?  <img src={mtnYellow} className='h-12' alt="" />: <Link to='/home'>
+  <i className="fa-solid fa-arrow-left text-xl py-2 px-4 border-2 text-mtn-yellow border-gray-500 rounded-xl w-full
+         hover:border-mtn-yellow hover:text-white ease-in-out duration-300"></i>
+    </Link>} 
 
    <div>
-    <Link to='/' id='log-out' className='py-3 px-4 border-2 text-mtn-yellow mtn-bold border-gray-500 rounded-xl w-full
+    <Link to='/' id='log-out' className='py-3 px-4 border-2 text-sm text-mtn-yellow mtn-bold border-gray-500 rounded-xl w-full
          hover:border-mtn-yellow hover:text-white ease-in-out duration-300 block'>Log out <i className="fa-solid fa-arrow-right-from-bracket"></i></Link>
    </div>
 
 </section>
 
-   <section className='container mx-auto overflow-hidden mt-5 px-3'>
-    <div className='hidden md:flex flex-col gap-5 overflow-scroll overflow-x-hidden pb-12 pr-4 h-100'>
+   <section className='overflow-hidden py-4'>
+    <div className='hidden md:flex flex-col gap-5 overflow-scroll overflow-x-hidden pb-28 pr-8 h-100'>
         <h3 className='text-xl'>Connect with your Apps</h3>
 
         <article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>

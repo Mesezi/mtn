@@ -13,12 +13,12 @@ function Register() {
 
 <article>
 
-<section className='heading px-5 pt-8 gap-10 items-center'>
+<section className='heading py-5 gap-8 md:gap-2 items-center'>
 <img src={mtnYellow} className='h-16 px-6 mx-auto' alt="" />
-<h1 className='md:text-3xl text-2xl mtn-bold text-center text-white'>Yello, Welcome to MTN Metaverse Portal</h1>
+<h1 className='md:text-4xl text-3xl mtn-bold text-center text-white'>Yello, Welcome to MTN Metaverse Portal</h1>
 </section>
 
-<section className='create-account'>
+<section className='create-account container mx-auto'>
 
 <div className='flex justify-center items-center'>
 <form className='p-7 md:p-10 flex flex-col gap-7 items-center text-xl'>
@@ -35,7 +35,7 @@ function Register() {
 </form>
 </div>
 
-<div className="hidden avatar md:flex items-center">
+<div className="hidden avatar md:flex items-center justify-center">
 <img src={avatar} alt="" />
 </div>
 
