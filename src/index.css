@@ -25,6 +25,7 @@ body{
     background-size: cover;
     color: white;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .mtn-bold{
@@ -120,22 +121,22 @@ form{
 
 
 .overflow-x-hidden::-webkit-scrollbar {
-    width: 7px;
+    width: 0px;
   }
   
   /* Track */
   .overflow-x-hidden::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0);
   }
   
   /* Handle */
   .overflow-x-hidden::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0);
   }
   
   /* Handle on hover */
   .overflow-x-hidden::-webkit-scrollbar-thumb:hover {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0);
   }
 
   .manage article{
@@ -154,6 +155,7 @@ visibility: hidden;
 
 .container{
   max-width: 1000px;
+  padding: 0 1rem;
 }
   
 @media(min-width: 767px){

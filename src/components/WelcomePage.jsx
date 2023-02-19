@@ -10,8 +10,8 @@ function Welcome() {
 <h2 className='text-5xl mtn-bold'>Y'ello, Welcome Daniel</h2>
 
 <article className='bg-black/75 flex gap-10 md:max-h-[30rem] rounded-2xl p-8 my-8 overflow-scroll overflow-x-hidden'>
-<div className='hidden lg:flex px-10 items-center'>
-<img src={avatar} className='h-80' alt="" />
+<div className='hidden lg:flex shrink-0 px-5 items-center'>
+<img src={avatar} className='h-[20rem]' alt="" />
 </div>
 
 <div className='grow flex flex-wrap'>

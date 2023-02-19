@@ -43,10 +43,10 @@ el.addEventListener('keyup',()=>{
 <h1 className='md:text-4xl text-3xl mtn-bold text-center text-white'>Yello, Welcome to MTN Metaverse Portal</h1>
 </section>
 
-<section className='verify-account'>
+<section className='verify-account container mx-auto'>
 
 <div className='flex justify-center items-center'>
-<form className='p-5 md:p-10 flex flex-col gap-5 md:gap-7 items-center text-lg'>
+<form className='p-7 md:p-10 flex flex-col gap-7 items-center text-xl'>
 
 <h2 className='text-4xl mtn-bold text-center text-mtn-yellow'>Create an Account</h2>
 
