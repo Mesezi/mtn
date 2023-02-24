@@ -26,22 +26,23 @@ function Home() {
 
 </section>
 
-   <section className='overflow-hidden py-4'>
-    <div className='hidden md:flex flex-col gap-5 overflow-scroll overflow-x-hidden pb-28 pr-8 h-100'>
-        <h3 className='text-xl'>Connect with your Apps</h3>
+   <section className=' py-4'>
+    <div className='hidden md:flex flex-col pb-28 pr-5 h-100'>
+        <h3 className='text-lg mb-5'>Connect with your Apps</h3>
 
+        <div className='hidden md:flex flex-col gap-2 pb-12 '>
         <article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
 
-        <img src={bg} className='h-36 rounded-xl' alt="" />
+<img src={bg} className='h-36 rounded-xl' alt="" />
 
-        <div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-mtn-yellow'>myMTN App</h4>
-        <p>Personal your experience with your avatar</p>
+<div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-mtn-yellow'>myMTN App</h4>
+<p>Personal your experience with your avatar</p>
 
-        <div><button className='py-3 px-4 border-2 text-black border-gray-500 bg-mtn-yellow rounded-xl
-        hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70 text-sm inline'>Connect +</button></div>
+<div><button className='py-3 px-4 border-2 text-black border-gray-500 bg-mtn-yellow rounded-xl
+hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70 text-sm inline'>Connect +</button></div>
 
-        </div>
-       
+</div>
+
         </article>
         <article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
 
@@ -55,22 +56,11 @@ hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yell
 
 </div>
 
-</article>
-
-<article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
-
-        <img src={bg} className='h-36 rounded-xl' alt="" />
-
-        <div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-mtn-yellow'>myMTN App</h4>
-        <p>Personal your experience with your avatar</p>
-
-        <div><button className='py-3 px-4 border-2 text-black border-gray-500 bg-mtn-yellow rounded-xl
-        hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70 text-sm inline'>Connect +</button></div>
-
-        </div>
-       
         </article>
+        </div>
+
     </div>
+
 
    <Outlet />
 

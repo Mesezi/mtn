@@ -7,17 +7,20 @@ function Welcome() {
   return (
 
  <div className='flex flex-col'>
-<h2 className='text-5xl mtn-bold'>Y'ello, Welcome Daniel</h2>
+<h2 className='text-4xl mtn-bold'>Y'ello, Welcome Daniel</h2>
 
-<article className='bg-black/75 flex gap-10 md:max-h-[30rem] rounded-2xl p-8 my-8 overflow-scroll overflow-x-hidden'>
+<article className='bg-black/75 flex gap-10 rounded-2xl p-8 my-3'>
 <div className='hidden lg:flex shrink-0 px-5 items-center'>
 <img src={avatar} className='h-[20rem]' alt="" />
 </div>
 
 <div className='grow flex flex-wrap'>
-    <div className='flex gap-5 p-8 w-full border-2 justify-between border-gray-500 rounded-xl '>
-    <img src={avatar} className='h-28' alt="" />
-    <div className='flex flex-col gap-5'>
+    <div className='flex gap-5 w-full px-8 pt-3 border-2 justify-between border-gray-500 rounded-xl'>
+        <div className='relative h-full w-40 overflow-hidden'>
+           <img src={avatar} className='absolute' alt="" /> 
+        </div>
+    
+    <div className='flex flex-col gap-5 py-8'>
 
         <button className='py-3 px-4 border-2 text-black mtn-bold text-sm border-gray-500 bg-mtn-yellow rounded-xl w-full
         hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70'>Change Main Avatar</button>

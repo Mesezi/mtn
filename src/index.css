@@ -24,8 +24,8 @@ body{
     background-image: url(./assets/Sign.png);
     background-size: cover;
     color: white;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 100vh;
 }
 
 .mtn-bold{
@@ -57,7 +57,7 @@ body{
 }
 
 .avatar img{
-    height: 70vh;
+    height: 110vh;
 }
 
 form{
@@ -66,7 +66,7 @@ form{
     backdrop-filter: blur(10px);
     color: white;
     width: 95%;
-    max-width: 30rem;
+    max-width: 35rem;
     border-radius: .5rem;
     box-shadow: 1px 0px 31px -4px rgba(0,0,0,1);
   -webkit-box-shadow: 1px 0px 31px -4px rgba(0,0,0,1);
@@ -120,24 +120,23 @@ form{
   }
 
 
-.overflow-x-hidden::-webkit-scrollbar {
+/* .overflow-x-hidden::-webkit-scrollbar {
     width: 0px;
   }
   
-  /* Track */
+ 
   .overflow-x-hidden::-webkit-scrollbar-track {
     background: rgba(0,0,0);
   }
   
-  /* Handle */
+  
   .overflow-x-hidden::-webkit-scrollbar-thumb {
     background: rgba(0,0,0);
   }
   
-  /* Handle on hover */
   .overflow-x-hidden::-webkit-scrollbar-thumb:hover {
     background: rgba(0,0,0);
-  }
+  } */
 
   .manage article{
     display: grid;
@@ -154,13 +153,13 @@ visibility: hidden;
 }
 
 .container{
-  max-width: 1000px;
   padding: 0 1rem;
+  max-width: 1200px;
 }
   
 @media(min-width: 767px){
   html{
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .create-account, .verify-account{
@@ -176,9 +175,8 @@ visibility: hidden;
 }
 
 .home section:nth-of-type(2){
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 25% 1fr;
 }
-
 
 .manage article{
   grid-template-columns: 1fr 1fr;

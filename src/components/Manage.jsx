@@ -8,7 +8,7 @@ function Manage() {
   return (
 
     <div className='manage'>
-<h2 className='text-5xl mtn-bold'>Manage your avatars</h2>
+<h2 className='text-4xl mtn-bold'>Manage your avatars</h2>
 
 <section className='bg-black/75 md:max-h-[30rem] rounded-2xl p-8 my-8 overflow-scroll overflow-x-hidden'>
 
