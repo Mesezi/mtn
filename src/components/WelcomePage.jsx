@@ -15,7 +15,7 @@ function Welcome() {
 </div>
 
 <div className='grow flex flex-wrap'>
-    <div className='flex gap-5 w-full px-8 pt-3 border-2 justify-between border-gray-500 rounded-xl'>
+    <div className='flex justify-between w-full px-8 pt-3 border-2 border-gray-500 rounded-xl'>
         <div className='relative h-full w-40 overflow-hidden'>
            <img src={avatar} className='absolute' alt="" /> 
         </div>

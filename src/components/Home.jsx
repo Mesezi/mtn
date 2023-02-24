@@ -48,7 +48,7 @@ hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yell
 
 <img src={bg} className='h-36 rounded-xl' alt="" />
 
-<div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-mtn-yellow'>myMTN App</h4>
+<div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-mtn-yellow'>NFT MarketPlace</h4>
 <p>Personal your experience with your avatar</p>
 
 <div><button className='py-3 px-4 border-2 text-black border-gray-500 bg-mtn-yellow rounded-xl

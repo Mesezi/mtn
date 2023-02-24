@@ -10,10 +10,10 @@ function Manage() {
     <div className='manage'>
 <h2 className='text-4xl mtn-bold'>Manage your avatars</h2>
 
-<section className='bg-black/75 md:max-h-[30rem] rounded-2xl p-8 my-8 overflow-scroll overflow-x-hidden'>
+<section className='bg-black/75 rounded-2xl p-8 my-8'>
 
 <article className=''>
-  <div className='flex flex-col p-5 w-full border-2 border-gray-500 rounded-xl '>
+  <div className='flex flex-col pt-5 px-5 w-full border-2 border-gray-500 rounded-xl '>
 
     <div className='flex justify-end'>
       <button className='relative tooltip'><i className="fa-solid text-4xl text-mtn-yellow fa-ellipsis"></i>
@@ -21,9 +21,11 @@ function Manage() {
         <i className="fa-regular text-lg fa-trash-can"></i> Delete Avatar </span></button>
     </div>
 
-    <div className='flex md:justify-between gap-5 flex-wrap justify-center'>
-    <img src={avatar} className='h-48' alt="" />
-    <div className='flex items-end'><button className='py-3 px-4 border-2 text-mtn-yellow mtn-bold border-gray-500 rounded-xl w-full
+    <div className='flex md:justify-between gap-5 flex-wrap justify-between'>
+    <div className='relative h-44 w-40 overflow-hidden'>
+           <img src={avatar} className='absolute' alt="" /> 
+        </div>
+    <div className='flex items-end mb-5'><button className='py-3 px-4 border-2 text-mtn-yellow mtn-bold border-gray-500 rounded-xl w-full
          hover:border-mtn-yellow hover:text-white ease-in-out duration-300 inline'>Edit
       <i className="pl-3 fa-solid fa-pencil"></i>
      </button>
