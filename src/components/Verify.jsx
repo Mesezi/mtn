@@ -4,6 +4,7 @@ import mtnYellow from '../assets/MTN-yellow.png'
 import avatar from '../assets/avatar.avif'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import background from '../assets/Sign.png'
 
 function Verify() {
   
@@ -19,10 +20,7 @@ el.addEventListener('keyup',()=>{
      el.style.backgroundColor = '#ffcc03'
         code[index+1].focus()
    }    
-   catch{
-    console.log('error')
-   }
-   
+   catch{console.log('error')}
     }
 })
 
@@ -34,7 +32,9 @@ el.addEventListener('keyup',()=>{
 
 
   return (
-    <div className="login page">
+    <>
+    <img src={background} className='block h-screen fixed w-full'/>
+    <div className="login page z-2 relative">
 <article>
 <section className='heading pt-7 pl-3 gap-6 md:gap-2 items-center'>
 <img src={mtnYellow} className='h-12 px-6 mx-auto' alt="" />
@@ -44,7 +44,7 @@ el.addEventListener('keyup',()=>{
 
 
 
-<section className='verify-account container mx-auto'>
+<section className='verify-account container mx-auto mt-4'>
 <div className='flex justify-center items-center'>
 <form className='p-7 md:p-10 flex flex-col gap-7 items-center text-xl'>
 <h2 className='text-4xl mtn-bold text-center text-mtn-yellow'>Create an Account</h2>
@@ -59,7 +59,7 @@ el.addEventListener('keyup',()=>{
     <input className='otp-code' maxLength="1" type="text" name="" id="" />
 </div>
 
-<Link to="/home"><button className='bg-mtn-yellow/70 text-black px-12 py-3 text-xl mtn-bold rounded-xl hover:bg-mtn-yellow'>Verify-OTP</button></Link>
+<Link to="/home"><button className='otp-code bg-mtn-yellow/70 text-black px-12 py-3 text-xl mtn-bold rounded-xl hover:bg-mtn-yellow'>Verify-OTP</button></Link>
 
 <p>Didn't receive code? <button className='text-mtn-yellow hover:text-white'>Resend Code</button></p>
 </form>
@@ -72,6 +72,7 @@ el.addEventListener('keyup',()=>{
 
     </article>
     </div>
+    </>
   )
 }
 

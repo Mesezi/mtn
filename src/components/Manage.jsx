@@ -1,6 +1,6 @@
 import bg from '../assets/Sign.png'
 import mtnYellow from '../assets/MTN-yellow.png'
-import avatar from '../assets/avatar.avif'
+import avatar from '../assets/avatar.png'
 import { Link } from 'react-router-dom'
 
 function Manage() {
@@ -10,7 +10,7 @@ function Manage() {
     <div className='manage'>
 <h2 className='text-4xl mtn-bold'>Manage your avatars</h2>
 
-<section className='bg-black/75 rounded-2xl p-8 my-8'>
+<section className='bg-black/75 rounded-2xl p-7 my-3'>
 
 <article className=''>
   <div className='flex flex-col pt-5 px-5 w-full border-2 border-gray-500 rounded-xl '>

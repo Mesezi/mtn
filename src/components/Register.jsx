@@ -3,13 +3,15 @@ import bg from '../assets/Sign.png'
 import mtnYellow from '../assets/MTN-yellow.png'
 import avatar from '../assets/avatar.avif'
 import { Link } from 'react-router-dom'
+import background from '../assets/Sign.png'
+
 
 function Register() {
-  
-
 
   return (
-    <div className="login page">
+    <>
+    <img src={background} className='block h-screen fixed w-full'/>
+    <div className="login page z-2 relative">
 <article>
 
 <section className='heading pt-7 pl-3 gap-6 md:gap-2 items-center'>
@@ -19,7 +21,7 @@ function Register() {
 
 
 
-<section className='create-account container mx-auto'>
+<section className='create-account container mx-auto mt-4'>
 <div className='flex justify-center items-center'>
 <form className='p-7 md:p-10 flex flex-col gap-8 items-center text-xl'>
 <h2 className='md:text-4xl text-3xl mtn-bold text-center text-mtn-yellow'>Create an Account</h2>
@@ -39,6 +41,7 @@ function Register() {
 
     </article>
     </div>
+    </>
   )
 }
 

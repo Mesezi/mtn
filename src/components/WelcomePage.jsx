@@ -1,15 +1,15 @@
 import bg from '../assets/Sign.png'
 import mtnYellow from '../assets/MTN-yellow.png'
-import avatar from '../assets/avatar.avif'
+import avatar from '../assets/avatar.png'
 import { Link } from 'react-router-dom'
 
 function Welcome() {
   return (
 
  <div className='flex flex-col'>
-<h2 className='text-4xl mtn-bold'>Y'ello, Welcome Daniel</h2>
+<h2 className='text-4xl mtn-bold'>Y'ello! Welcome Daniel</h2>
 
-<article className='bg-black/75 flex gap-10 rounded-2xl p-8 my-3'>
+<article className='bg-black/75 flex gap-10 rounded-2xl p-7 my-3'>
 <div className='hidden md:flex shrink-0 px-5 items-center'>
 <img src={avatar} className='h-[25rem]' alt="" />
 </div>
