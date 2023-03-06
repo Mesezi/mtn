@@ -19,7 +19,7 @@ function Home() {
          hover:border-mtn-yellow hover:text-white ease-in-out duration-300"></i>
     </Link>} 
 <div>
-    <Link to='/' id='log-out' className='py-3 px-4 border-2 text-sm text-mtn-yellow mtn-bold border-gray-500 rounded-xl w-full
+    <Link to='/' id='log-out' className='py-3 px-4 border-2  text-mtn-yellow mtn-bold border-gray-500 rounded-xl w-full
      hover:border-mtn-yellow hover:text-white ease-in-out duration-300 block'>Log out <i className="fa-solid fa-arrow-right-from-bracket">
        </i>
     </Link>
@@ -31,30 +31,30 @@ function Home() {
 
    <section className=' py-4'>
     <div className='hidden lg:flex flex-col pb-28 pr-5 h-100'>
-      <h3 className='text-lg mb-5'>Connect with your Apps</h3>
+      <h3 className='text-2xl mb-3 text-center'>Connect with your Apps</h3>
 
 
     <div className='hidden md:flex flex-col gap-2 pb-12 '>
-<article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
+<article className='flex flex-col gap-3 rounded-xl border-2 mb-5 border-gray-500'>
 <img src={bg} className='h-36 rounded-xl' alt="" />
 <div className='px-4 pb-5 flex flex-col gap-3'> 
 <h4 className='text-xl text-mtn-yellow'>myMTN App</h4>
 <p>Personal your experience with your avatar</p>
 <div>
   <button className='py-3 px-4 border-2 text-black border-gray-500 bg-mtn-yellow rounded-xl
-hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70 text-sm inline'>Connect +
+hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70  inline'>Connect +
 </button>
 </div>
 </div>
 </article>
 
 
-<article className='flex flex-col gap-3 rounded-xl border-2 border-gray-500'>
+<article className='flex flex-col gap-3 rounded-xl border-2 mb-5 border-gray-500'>
 <img src={bg} className='h-36 rounded-xl' alt="" />
 <div className='px-4 pb-5 flex flex-col gap-3'> <h4 className='text-xl text-mtn-yellow'>NFT MarketPlace</h4>
 <p>Personal your experience with your avatar</p>
 <div><button className='py-3 px-4 border-2 text-black border-gray-500 bg-mtn-yellow rounded-xl
-hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70 text-sm inline'>Connect +</button></div>
+hover:-translate-y-2 ease-in-out duration-200 hover:text-white hover:bg-mtn-yellow/70  inline'>Connect +</button></div>
 </div>
 </article>
         </div>
